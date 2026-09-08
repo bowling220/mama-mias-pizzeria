@@ -5,14 +5,20 @@ import './styles.css';
 
 type Day = {day:string; open?:string; close?:string};
 export const restaurantConfig = {
-  name:"Mama Mia's Pizzeria", established:1980, timezone:'America/New_York', phone:'', orderingUrl:import.meta.env.VITE_ORDERING_URL || '',
+  name:"Mama Mia's Pizzeria", established:1980, timezone:'America/New_York', phone:'814-790-5868', orderingUrl:import.meta.env.VITE_ORDERING_URL || '',
   address:{street:'1529 W 38th St', city:'Erie', state:'PA', zip:'16508'},
-  features:{dineInEnabled:false, carryoutEnabled:true, deliveryEnabled:false, onlineOrderingEnabled:false, cateringEnabled:false},
+  features:{dineInEnabled:false, carryoutEnabled:true, deliveryEnabled:true, onlineOrderingEnabled:false, cateringEnabled:false},
   hours:[{day:'Monday'},{day:'Tuesday'},{day:'Wednesday',open:'4 PM',close:'8 PM'},{day:'Thursday',open:'4 PM',close:'8 PM'},{day:'Friday',open:'3 PM',close:'9 PM'},{day:'Saturday',open:'3 PM',close:'9 PM'},{day:'Sunday',open:'3 PM',close:'7 PM'}] as Day[],
   menu:[
-    {name:'Classic Cheese',desc:'Our signature red sauce, whole-milk mozzarella, and a crisp, golden edge.',tag:'THE ORIGINAL',image:'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=1000&q=85'},
-    {name:'Pepperoni',desc:'Cup-and-char pepperoni, mozzarella, and that sauce you know by heart.',tag:'CUSTOMER FAVORITE',image:'https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=1000&q=85'},
-    {name:'Stromboli',desc:'Rolled, oven-baked, and packed with savory fillings. Built for sharing—or not.',tag:'OVEN BAKED',image:'https://images.unsplash.com/photo-1625398407796-82650a8c135f?auto=format&fit=crop&w=1000&q=85'}
+    {name:'12" Small Cheese',price:'$8.99',desc:'8 slices. All pizzas are made with fresh dough.',tag:'THE ORIGINAL',image:'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=1000&q=85'},
+    {name:'14" Large Cheese',price:'$10.55',desc:'10 slices. Fresh dough, homemade tomato sauce, mozzarella.',tag:'CUSTOMER FAVORITE',image:'https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=1000&q=85'},
+    {name:'Meatlovers',price:'$16.85',desc:'Mozzarella, pepperoni, ham, meatballs, sausage, and bacon.',tag:'SPECIALTY PIZZA',image:'https://images.unsplash.com/photo-1594007654729-407eedc4be65?auto=format&fit=crop&w=1000&q=85'},
+    {name:'Stromboli',price:'$11.69 / $14.45',desc:'Mozzarella, pepperoni, sausage, mushrooms, onions, sweet peppers, and pizza sauce.',tag:'OVEN BAKED',image:'https://images.unsplash.com/photo-1625398407796-82650a8c135f?auto=format&fit=crop&w=1000&q=85'},
+    {name:'Cheese Calzone',price:'$9.55 / $11.09',desc:'Mozzarella, ricotta cheese, and pizza sauce.',tag:'OVEN BAKED',image:'https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=1000&q=85'},
+    {name:'Boneless Wings',price:'$10.29',desc:'8–10 pieces, tossed in your favorite sauce or served with dipping sauce.',tag:'WINGS',image:'https://images.unsplash.com/photo-1527477396000-e27163b481c2?auto=format&fit=crop&w=1000&q=85'},
+    {name:'Antipasto Salad',price:'$5.69 / $10.25 / $11.05',desc:'Mixed greens, ham, salami, provolone, pepperoni, chickpeas, olives, tomatoes, and pepperoncini.',tag:'SALADS',image:'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1000&q=85'},
+    {name:'Chicken Parmigiana Sub',price:'$7.89',desc:'Marinara, chicken tenders, parmesan, and mozzarella on a toasted 10-inch sub.',tag:'SUBS',image:'https://images.unsplash.com/photo-1550507992-eb63ffee0847?auto=format&fit=crop&w=1000&q=85'},
+    {name:'Breadsticks',price:'$4.99',desc:'Made with our fresh dough.',tag:'STARTERS',image:'https://images.unsplash.com/photo-1573140401552-3fab0b24306f?auto=format&fit=crop&w=1000&q=85'}
   ]
 };
 
