@@ -8,6 +8,7 @@
 - Browser: contact form saved a QA inquiry and the same inquiry appeared in the owner inbox. Owner announcement save showed confirmation.
 - Browser: search narrowed to Stromboli, favorite state persisted without clearing the filter, customizer opened and Escape closed it, mobile navigation opened and navigated correctly.
 - Responsive: homepage and menu checked at 375, 430, 768, 1024 and 1440 pixels; no horizontal page overflow. Other public routes checked at 375 pixels. Dashboard landscape checked at 1024 × 600 without overflow.
+- Mobile redesign pass: dedicated 375–700px layouts added for navigation, hero, featured cards, menu/search, bottom-sheet customizer, cart, story, locations, contact, footer and every owner-dashboard editor. Homepage, menu and customizer were visually rechecked at 375px after deployment.
 - Browser route sweep: story, directory, Erie detail, expansion interest, specials, privacy, accessibility and custom not-found page rendered. Console error log was empty during the sweep.
 - Keyboard: Tab reaches visible skip link; native dialog handles focus and Escape. Reduced-motion rules reviewed in CSS. This is a manual accessibility check, not a formal WCAG audit or automated Lighthouse score.
 - Current address and telephone targets verified. Directions point to the West 38th Street address. No call was placed.
