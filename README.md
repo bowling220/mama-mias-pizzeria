@@ -11,6 +11,7 @@ Unlock the preview, then open `/admin` and use the separate owner password suppl
 ## Architecture
 
 - React, TypeScript, Vite, React Router. Separate URL routes for home, menu, bag, orders, story, locations, location detail, contact, expansion interest, specials, privacy, accessibility and owner dashboard.
+- Real Erie storefront identity reference plus enhanced responsive logo and chef badge; source and production files are documented in `BRAND.md`.
 - `src/catalog.ts`: initial menu and integer-cent modifier pricing.
 - `src/business.ts`: initial Erie location and America/New_York opening engine.
 - Firestore `config/site`: persisted owner configuration (overrides defaults).

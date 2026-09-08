@@ -2242,3 +2242,76 @@ footer {
     white-space: nowrap;
   }
 }
+
+/* Authentic Erie brand system, redrawn from the storefront sign */
+.wordmark {
+  display: inline-flex;
+  align-items: center;
+  width: 272px;
+  max-width: 31vw;
+  line-height: 1;
+}
+.wordmark img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+header > .wordmark {
+  flex: 0 1 272px;
+}
+.gate .wordmark {
+  width: min(470px, 100%);
+  max-width: 100%;
+  margin-bottom: 48px;
+}
+.footer-main .wordmark {
+  width: min(330px, 100%);
+  max-width: 100%;
+}
+.brand-badge {
+  display: block;
+  object-fit: contain;
+  padding: 0;
+  background: transparent;
+  border: 0;
+}
+.hero-photo .brand-badge {
+  width: 124px;
+  height: 124px;
+}
+
+@media (max-width: 800px) {
+  .wordmark {
+    width: 205px;
+    max-width: 31vw;
+  }
+}
+
+@media (max-width: 700px) {
+  header .wordmark {
+    width: 174px;
+    max-width: calc(100vw - 132px);
+  }
+  .gate .wordmark {
+    width: min(360px, 100%);
+    max-width: 100%;
+    margin-bottom: 38px;
+  }
+  .footer-main .wordmark {
+    width: min(300px, 100%);
+    max-width: 100%;
+  }
+  .hero-photo .brand-badge {
+    width: 88px;
+    height: 88px;
+    left: -10px;
+  }
+}
+
+@media (max-width: 390px) {
+  header .wordmark {
+    width: 164px;
+    max-width: calc(100vw - 126px);
+  }
+}

@@ -144,8 +144,11 @@ function Gate({ enter }: { enter: (s: State) => void }) {
   return (
     <main className="gate">
       <div className="gate-box">
-        <div className="wordmark">
-          Mama Mia’s<span>PIZZERIA · ERIE, PA</span>
+        <div className="wordmark gate-logo">
+          <img
+            src="/mama-mias-logo-web.webp"
+            alt="Mama Mia’s Pizza · Est. 1980 · Erie, PA"
+          />
         </div>
         <span className="eyebrow">A FRESH CHAPTER · PRIVATE PREVIEW</span>
         <h1>
@@ -620,7 +623,10 @@ function Site() {
       )}
       <header>
         <Link className="wordmark" to="/home">
-          Mama Mia’s<span>PIZZERIA · ERIE, PA</span>
+          <img
+            src="/mama-mias-logo-web.webp"
+            alt="Mama Mia’s Pizza · Est. 1980 · Erie, PA"
+          />
         </Link>
         <nav className={mobile ? "expanded" : ""} aria-label="Main navigation">
           {[
@@ -830,7 +836,10 @@ function Site() {
         <div className="wrap footer-main">
           <div>
             <Link to="/home" className="wordmark">
-              Mama Mia’s<span>PIZZERIA · ERIE, PA</span>
+              <img
+                src="/mama-mias-logo-web.webp"
+                alt="Mama Mia’s Pizza · Est. 1980 · Erie, PA"
+              />
             </Link>
             <p>
               Good pizza. Good neighbors.
@@ -1877,9 +1886,11 @@ function Home() {
               e.currentTarget.parentElement!.classList.add("photo-fallback");
             }}
           />
-          <div className="seal">
-            ERIE, PA<strong>1980</strong>THE ORIGINAL
-          </div>
+          <img
+            className="seal brand-badge"
+            src="/mama-mias-chef-badge-web.webp"
+            alt="Mama Mia’s chef · Est. 1980"
+          />
           <figcaption>
             Illustrative photography · Mama Mia’s photos coming next
           </figcaption>
